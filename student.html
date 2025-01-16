@@ -1,0 +1,63 @@
+<html>
+<head>
+  
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="text-box">
+      <h1 id="title">Welcome to dream campus Student Registration</h1>
+      <hr>
+  
+    </div>
+  </header>
+  <div class="container">
+    <form method="post" action="save.php">
+      <!-- Full Name -->
+      <div class="form-group">
+        <label id="name-label" for="name">* Full Name</label>
+        <input class="input-field" type="text" id="name" name="name" placeholder="Enter your full name" required autofocus>
+      </div>
+
+      <!-- NIC -->
+      <div class="form-group">
+        <label id="nic-label" for="nic">* NIC</label>
+        <input class="input-field" type="text" id="nic" name="nic" placeholder="Enter your NIC number" required>
+      </div>
+
+      <!-- Address -->
+      <div class="form-group">
+        <label id="address-label" for="address">* Address</label>
+        <textarea class="input-field" id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+      </div>
+
+      <!-- Telephone Number -->
+      <div class="form-group">
+        <label id="tel-label" for="tel">* Telephone Number</label>
+        <input class="input-field" type="tel" id="tel" name="tel" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+      </div>
+
+      <!-- Course -->
+      <div class="form-group">
+        <label id="course-label" for="course">* Course</label>
+        <select id="course" name="course" required>
+          <option disabled value selected>Select a course</option>
+          <option value="FUNDAMENTALS_OF_ICT">FUNDAMENTALS OF ICT</option>
+          <option value="MS_OFFICE_APPLICATION">MS OFFICE APPLICATION</option>
+          <option value="INTERNET_EMAIL_&_WEB_ENGINEERING">INTERNET EMAIL & WEB ENGINEERING</option>
+          <option value="DATABASE_MANAGEMENT">DATABASE_MANAGEMENT</option>
+          <option value="GRAPHICS_MULTIMEDIA_AND_SOCIAL_MEDIA">GRAPHICS MULTIMEDIA AND SOCIAL MEDIA</option>
+        </select>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn">
+        <button id="submit" type="submit" name="record">Register</button>
+        <button id="submit" type="submit" name="update">Update</button>
+        <button id="submit" type="submit" name="remove">Remove</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
